@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Set min-height to ensure full viewport height */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.recommendation-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.recommendation-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    width: 100%; /* Set width to 100% to take up full width of the flex container */
+}
+
+.recommendation-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie-image {
+    max-width: 100px;
+    max-height: 150px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.score {
+    color: #555;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>Recommendations for {{ movies[0]['Title'] }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Overview</th>
+                <th>Similarity Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for movie in movies %}
+            <tr>
+                <td>{{ movie['Title'] }}</td>
+                <td>{{ movie['Overview'] }}</td>
+                <td>{{ movie['Similarity Score'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

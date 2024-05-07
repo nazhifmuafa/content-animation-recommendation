@@ -1,0 +1,26 @@
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="{{ url_for('home') }}" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="/static/img/logo.png" alt=""> -->
+            <h1>Rekomendasi Film Animasi </h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
+                <li class="dropdown"><a href="#"><span>Rekomendasi</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                        <li><a href="{{ url_for('rekomendasi_judul') }}">Judul</a></li>
+                        <li><a href="{{ url_for('rekomendasi_keywords') }}">Keyword</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('data_animasi') }}" class="active">Data Animasi</a></li>
+            </ul>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
